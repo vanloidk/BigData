@@ -1,0 +1,1208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="V_COUNTRY" prompt="V_COUNTRY?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="MSGCODE" prompt="MSGCODE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ERRMSG" prompt="ERRMSG?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="xmlBody" prompt="xmlBody?" promptNeeded="false" type="id_Object" value=""/>
+    <contextParameter comment="" name="V_CHEM_SYS_HOST" prompt="V_CHEM_SYS_HOST?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="V_CHEM_SYS_POST" prompt="V_CHEM_SYS_POST?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="V_CHEM_SYS_USER" prompt="V_CHEM_SYS_USER?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="V_CHEM_SYS_PWD" prompt="V_CHEM_SYS_PWD?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="V_CHEM_SYS_SID" prompt="V_CHEM_SYS_SID?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="V_RECEIVE_DB" prompt="V_RECEIVE_DB?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="V_SENDER_ID" prompt="V_SENDER_ID?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="V_SENDER_DB" prompt="V_SENDER_DB?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="V_RECEIVE_ID" prompt="V_RECEIVE_ID?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="V_FACT_NO" prompt="V_FACT_NO?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="V_PUR_NO" prompt="V_PUR_NO?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="V_SHIP_DATE" prompt="V_SHIP_DATE?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="V_SEC_NO" prompt="V_SEC_NO?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="LogPath" prompt="LogPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="ConfigPath" prompt="ConfigPath?" promptNeeded="false" type="id_String" value=""/>
+    <contextParameter comment="" name="SystemName" prompt="SystemName?" promptNeeded="false" type="id_String" value="&quot;Service&quot;"/>
+    <contextParameter comment="" name="IsLegal" prompt="IsLegal?" promptNeeded="false" type="id_Boolean" value="true"/>
+    <contextParameter comment="" name="V_VOU_CODE" prompt="V_VOU_CODE?" promptNeeded="false" type="id_String" value=""/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="320"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE_IMPLICIT_CONTEXT:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value=""/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value=""/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;D:/TOS ESB WEBSERVICE/Project_ESB/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value=""/>
+    <elementParameter field="CHECK" name="UPDATE_COMPONENTS" value="false"/>
+    <elementParameter field="CHECK" name="STATS_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:PROPERTY_TYPE" value="BUILT_IN"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY_TYPE:REPOSITORY_PROPERTY_TYPE" value=""/>
+    <elementParameter field="CHECK" name="IMPLICT_DEFAULT_PROJECTSETTING" value="true"/>
+    <elementParameter field="PROPERTY_TYPE" name="PROPERTY_TYPE_IMPLICIT_CONTEXT" value=""/>
+    <routinesParameter id="_fbQhkIBoEeaq7_8gRikH6g" name="DataOperation"/>
+    <routinesParameter id="_fb1JUIBoEeaq7_8gRikH6g" name="Mathematical"/>
+    <routinesParameter id="_fb4MoIBoEeaq7_8gRikH6g" name="Numeric"/>
+    <routinesParameter id="_fb-6UIBoEeaq7_8gRikH6g" name="Relational"/>
+    <routinesParameter id="_fcBWkIBoEeaq7_8gRikH6g" name="StringHandling"/>
+    <routinesParameter id="_fcDy0IBoEeaq7_8gRikH6g" name="TalendDataGenerator"/>
+    <routinesParameter id="_fcHdMIBoEeaq7_8gRikH6g" name="TalendDate"/>
+    <routinesParameter id="_fcLuoIBoEeaq7_8gRikH6g" name="TalendString"/>
+    <routinesParameter id="_RsWDQAkDEeaO1-pyFe6Vog" name="crypto"/>
+  </parameters>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-288" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="VALUE" value="((Document)context.xmlBody)"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" name="body" nullable="true" pattern="" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="-160" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="out1">
+      <column comment="" key="false" name="COUNTRY" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="SENDER_ID" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="SENDER_DB" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="RECEIVE_ID" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="RECEIVE_DB" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="VOU_CODE" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row2" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="body" expression="" type="id_Document" xpath="row2/body">
+          <children name="ESB" type="id_String" xpath="row2.body:/ESB" loop="true" main="true">
+            <children name="COUNTRY" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.0" xpath="row2.body:/ESB/COUNTRY"/>
+            <children name="SENDER_ID" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.1" xpath="row2.body:/ESB/SENDER_ID"/>
+            <children name="SENDER_DB" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.2" xpath="row2.body:/ESB/SENDER_DB"/>
+            <children name="RECEIVE_ID" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.3" xpath="row2.body:/ESB/RECEIVE_ID"/>
+            <children name="RECEIVE_DB" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.4" xpath="row2.body:/ESB/RECEIVE_DB"/>
+            <children name="VOU_CODE" type="id_String" outgoingConnections="//@node.1/@nodeData/@connections.5" xpath="row2.body:/ESB/VOU_CODE"/>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="out1">
+        <nodes name="COUNTRY" expression="[row2.body:/ESB/COUNTRY]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.0" xpath="out1/COUNTRY"/>
+        <nodes name="SENDER_ID" expression="[row2.body:/ESB/SENDER_ID]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.1" xpath="out1/SENDER_ID"/>
+        <nodes name="SENDER_DB" expression="[row2.body:/ESB/SENDER_DB]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.2" xpath="out1/SENDER_DB"/>
+        <nodes name="RECEIVE_ID" expression="[row2.body:/ESB/RECEIVE_ID]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.3" xpath="out1/RECEIVE_ID"/>
+        <nodes name="RECEIVE_DB" expression="[row2.body:/ESB/RECEIVE_DB]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.4" xpath="out1/RECEIVE_DB"/>
+        <nodes name="VOU_CODE" expression="[row2.body:/ESB/VOU_CODE]" type="id_String" incomingConnections="//@node.1/@nodeData/@connections.5" xpath="out1/VOU_CODE"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0" target="//@node.1/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.1" target="//@node.1/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.2" target="//@node.1/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.3" target="//@node.1/@nodeData/@outputTrees.0/@nodes.3"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.4" target="//@node.1/@nodeData/@outputTrees.0/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.1/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.5" target="//@node.1/@nodeData/@outputTrees.0/@nodes.5"/>
+    </nodeData>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-32" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xA;context.V_COUNTRY = input_row.COUNTRY;&#xA;context.V_RECEIVE_DB = input_row.RECEIVE_DB;&#xA;context.V_RECEIVE_ID = input_row.RECEIVE_ID;&#xA;context.V_SENDER_DB = input_row.SENDER_DB;&#xA;context.V_SENDER_ID = input_row.SENDER_ID;&#xA;context.V_VOU_CODE = input_row.VOU_CODE;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out1" name="tJavaRow_2">
+      <column comment="" key="false" name="COUNTRY" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="SENDER_ID" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="SENDER_DB" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="RECEIVE_ID" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="RECEIVE_DB" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="VOU_CODE" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#xA;if (context.V_COUNTRY.trim().equals(&quot;&quot;))&#xA;{&#x9;&#xA;&#x9;context.IsLegal = false;&#xA;&#x9;context.MSGCODE = &quot;CHEM-100001;&quot;;&#xA;&#x9;context.ERRMSG = &quot;國家不可為空 !;&quot;;&#xA;}&#xA;&#xA;else if (context.V_COUNTRY.trim().equals(&quot;VN&quot;)==false &amp;&amp; context.V_COUNTRY !=null )&#xA;{  &#xA;  context.IsLegal = false;&#xA;  context.MSGCODE += &quot;CHEM-100002;&quot;;&#xA;  context.ERRMSG += &quot;國家不正確!;&quot;;&#xA;}&#xA;&#xA;if (context.V_SENDER_ID.trim().equals(&quot;&quot;))&#xA;{&#x9;&#xA;&#x9;context.IsLegal = false;&#xA;&#x9;context.MSGCODE += &quot;CHEM-100003;&quot;;&#xA;&#x9;context.ERRMSG += &quot;發送方ID不可為空!;&quot;;&#xA;}&#xA;&#xA;&#xA;&#xA;if (context.V_SENDER_DB.trim().equals(&quot;&quot;))&#xA;{&#x9;&#xA;&#x9;context.IsLegal = false;&#xA;&#x9;context.MSGCODE += &quot;CHEM-100004;&quot;;&#xA;&#x9;context.ERRMSG += &quot;發送方DB代碼不可為空 !;&quot;;&#xA;}&#xA;&#xA;if (context.V_RECEIVE_ID.trim().equals(&quot;&quot;))&#xA;{&#x9;&#xA;&#x9;context.IsLegal = false;&#xA;&#x9;context.MSGCODE += &quot;CHEM-100005;&quot;;&#xA;&#x9;context.ERRMSG += &quot;接收方ID不可為空 !;&quot;;&#xA;}&#xA;&#xA;else if (context.V_RECEIVE_ID.trim().equals(&quot;190.85&quot;)== false &amp;&amp; context.V_RECEIVE_ID !=null  )&#xA;{&#xA;  context.IsLegal = false;&#xA;  context.MSGCODE += &quot;CHEM-100006;&quot;;&#xA;  context.ERRMSG += &quot;接收方ID不正確!;&quot;;&#xA;}&#xA;&#xA;if (context.V_RECEIVE_DB.trim().equals(&quot;&quot;))&#xA;{&#x9;&#xA;  context.IsLegal = false;&#xA;  context.MSGCODE += &quot;CHEM-100007;&quot;;&#xA;  context.ERRMSG += &quot;接收方DB代碼不可為空!;&quot;;&#xA;&#x9;&#xA;}&#xA;&#xA;&#xA;if (context.V_VOU_CODE.trim().equals(&quot;&quot;))&#xA;{&#x9;&#xA;&#x9;context.IsLegal = false;&#xA;&#x9;context.MSGCODE += &quot;CHEM-100009;&quot;;&#xA;&#x9;context.ERRMSG += &quot;單據代碼不可為空!;&quot;;&#xA;}&#xA;&#xA;else if(context.V_VOU_CODE != null&amp;&amp; context.V_VOU_CODE.trim().equals(&quot;002&quot;)==false)&#xA;{&#xA;&#x9;context.IsLegal = false;&#xA;&#x9;context.MSGCODE +=&quot;CHEM-100010;&quot;;&#xA;&#x9;context.ERRMSG += &quot;單據代碼不正確! ;&quot;;&#xA;}&#xA;&#xA;int li,li_c;&#xA;if (StringHandling.LEN(context.MSGCODE) > 0 )&#xA;{&#xA;&#x9;li = StringHandling.LEN(context.MSGCODE)-1;&#xA;&#x9;li_c = StringHandling.LEN(context.ERRMSG)-1;&#xA;    System.out.println(StringHandling.LEN(context.ERRMSG)-1);&#xA;&#xA;    System.out.println(StringHandling.LEFT(context.MSGCODE,li));&#xA;    &#xA;&#x9;context.MSGCODE = StringHandling.LEFT(context.MSGCODE,li);&#xA;&#x9;context.ERRMSG = StringHandling.LEFT(context.ERRMSG,li_c);&#xA;&#x9;System.out.println(context.ERRMSG);&#xA;}&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="context.ERRMSG"/>
+    <elementParameter field="TEXT" name="CODE" value="1"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_1"/>
+  </node>
+  <node componentName="tOracleConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleConnection_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11-6"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_TNS_FILE" value="false"/>
+    <elementParameter field="FILE" name="TNS_FILE" value="&quot;&quot;"/>
+    <elementParameter field="TNS_EDITOR" name="TNS_EDITOR" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.V_CHEM_SYS_HOST"/>
+    <elementParameter field="TEXT" name="TYPE" value="Oracle"/>
+    <elementParameter field="TEXT" name="PORT" value="context.V_CHEM_SYS_POST"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.V_CHEM_SYS_SID"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="context.V_CHEM_SYS_USER"/>
+    <elementParameter field="PASSWORD" name="PASS" value="8pW6Nmy2kufsT40wzEHTh5qDZ7AuVdW6"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value=""/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:thin:USER/MDP@server&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="8" offsetLabelY="0" posX="544" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_3"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="VALUE" value="((Document)context.xmlBody)"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_3">
+      <column comment="" key="false" name="body" nullable="true" pattern="" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="736" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_3"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out3" name="out3">
+      <column comment="" key="true" name="FACT_NO" nullable="true" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" name="PUR_NO" nullable="true" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="SHIP_DAY" nullable="true" originalDbColumnName="SHAP_DAY" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="SEC_NO" nullable="true" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row5" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="body" expression="" type="id_Document" xpath="row5/body">
+          <children name="ESB" type="id_String" xpath="row5.body:/ESB" loop="true" main="true">
+            <children name="COUNTRY" type="id_String" xpath="row5.body:/ESB/COUNTRY"/>
+            <children name="SENDER_ID" type="id_String" xpath="row5.body:/ESB/SENDER_ID"/>
+            <children name="SENDER_DB" type="id_String" xpath="row5.body:/ESB/SENDER_DB"/>
+            <children name="RECEIVE_ID" type="id_String" xpath="row5.body:/ESB/RECEIVE_ID"/>
+            <children name="RECEIVE_DB" type="id_String" xpath="row5.body:/ESB/RECEIVE_DB"/>
+            <children name="VOU_CODE" type="id_String" xpath="row5.body:/ESB/VOU_CODE"/>
+            <children name="PUR_ORDERM" type="id_String" xpath="row5.body:/ESB/PUR_ORDERM">
+              <children name="FACT_NO" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.0" xpath="row5.body:/ESB/PUR_ORDERM/FACT_NO"/>
+              <children name="PUR_NO" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.1" xpath="row5.body:/ESB/PUR_ORDERM/PUR_NO"/>
+              <children name="SHIP_DATE" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.2" xpath="row5.body:/ESB/PUR_ORDERM/SHIP_DATE"/>
+              <children name="SEC_NO" type="id_String" outgoingConnections="//@node.7/@nodeData/@connections.3" xpath="row5.body:/ESB/PUR_ORDERM/SEC_NO"/>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="out3">
+        <nodes name="FACT_NO" expression="[row5.body:/ESB/PUR_ORDERM/FACT_NO]" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.0" xpath="out3/FACT_NO" key="true"/>
+        <nodes name="PUR_NO" expression="[row5.body:/ESB/PUR_ORDERM/PUR_NO]" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.1" xpath="out3/PUR_NO" key="true"/>
+        <nodes name="SHIP_DAY" expression="[row5.body:/ESB/PUR_ORDERM/SHIP_DATE]" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.2" xpath="out3/SHIP_DAY"/>
+        <nodes name="SEC_NO" expression="[row5.body:/ESB/PUR_ORDERM/SEC_NO]" type="id_String" incomingConnections="//@node.7/@nodeData/@connections.3" xpath="out3/SEC_NO"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.0" target="//@node.7/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.1" target="//@node.7/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.2" target="//@node.7/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.7/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.6/@children.3" target="//@node.7/@nodeData/@outputTrees.0/@nodes.3"/>
+    </nodeData>
+  </node>
+  <node componentName="tOracleOutput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="864" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleOutput_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11-6"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="Oracle"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TABLESCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;pur_exchangem&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="TABLE_ACTION" value="NONE"/>
+    <elementParameter field="LABEL" name="NOTE" value="Warning : this component configuration will automatically generate a commit before data insert/update/delete"/>
+    <elementParameter field="CLOSED_LIST" name="DATA_ACTION" value="UPDATE"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id"/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="COMMIT_EVERY" value="10000"/>
+    <elementParameter field="TABLE" name="ADD_COLS"/>
+    <elementParameter field="CHECK" name="USE_FIELD_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="FIELD_OPTIONS">
+      <elementValue elementRef="SCHEMA_COLUMN" value="FACT_NO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PUR_NO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SHIP_DAY"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="SEC_NO"/>
+      <elementValue elementRef="UPDATE_KEY" value="false"/>
+      <elementValue elementRef="DELETE_KEY" value="false"/>
+      <elementValue elementRef="UPDATABLE" value="true"/>
+      <elementValue elementRef="INSERTABLE" value="true"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_HINT_OPTIONS" value="false"/>
+    <elementParameter field="TABLE" name="HINT_OPTIONS"/>
+    <elementParameter field="CHECK" name="CONVERT_COLUMN_TABLE_TO_UPPERCASE" value="false"/>
+    <elementParameter field="CHECK" name="ENABLE_DEBUG_MODE" value="false"/>
+    <elementParameter field="CHECK" name="USE_BATCH_SIZE" value="true"/>
+    <elementParameter field="CHECK" name="USE_BATCH_AND_USE_CONN" value="false"/>
+    <elementParameter field="TEXT" name="BATCH_SIZE" value="10000"/>
+    <elementParameter field="CHECK" name="SUPPORT_NULL_WHERE" value="false"/>
+    <elementParameter field="CHECK" name="USE_TIMESTAMP_FOR_DATE_TYPE" value="true"/>
+    <elementParameter field="CHECK" name="TRIM_CHAR" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out3" name="tOracleOutput_1">
+      <column comment="" key="true" name="FACT_NO" nullable="true" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" name="PUR_NO" nullable="true" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="SHIP_DAY" nullable="true" originalDbColumnName="SHAP_DAY" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="SEC_NO" nullable="true" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="out3" name="REJECT">
+      <column comment="" key="true" name="FACT_NO" nullable="true" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="true" name="PUR_NO" nullable="true" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="SHIP_DAY" nullable="true" originalDbColumnName="SHAP_DAY" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="SEC_NO" nullable="true" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="VARCHAR2" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-196" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogCatcher_1">
+      <column key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="-64" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_4"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out4" name="out4">
+      <column comment="" key="false" name="body" nullable="true" pattern="" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FLOW" label="out5" name="out5">
+      <column comment="" key="false" name="JOB" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="MOMENT" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="FACT_NO" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="PUR_NO" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="ORIGIN" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CODE" nullable="true" pattern="" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" name="ERRMSG" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row6" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="moment" type="id_Date" outgoingConnections="//@node.10/@nodeData/@connections.2" xpath="row6/moment"/>
+        <nodes name="pid" type="id_String" xpath="row6/pid"/>
+        <nodes name="root_pid" type="id_String" xpath="row6/root_pid"/>
+        <nodes name="father_pid" type="id_String" xpath="row6/father_pid"/>
+        <nodes name="project" type="id_String" xpath="row6/project"/>
+        <nodes name="job" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.1" xpath="row6/job"/>
+        <nodes name="context" type="id_String" xpath="row6/context"/>
+        <nodes name="priority" type="id_Integer" xpath="row6/priority"/>
+        <nodes name="type" type="id_String" xpath="row6/type"/>
+        <nodes name="origin" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.0" xpath="row6/origin"/>
+        <nodes name="message" type="id_String" outgoingConnections="//@node.10/@nodeData/@connections.5 //@node.10/@nodeData/@connections.6" xpath="row6/message"/>
+        <nodes name="code" type="id_Integer" outgoingConnections="//@node.10/@nodeData/@connections.3 //@node.10/@nodeData/@connections.4" xpath="row6/code"/>
+      </inputTrees>
+      <outputTrees name="out4">
+        <nodes name="body" expression="" type="id_Document" xpath="out4/body" pattern="">
+          <children xsi:type="TalendXMLMap:OutputTreeNode" name="ESB" expression="" type="id_String" xpath="out4.body:/ESB" loop="true" main="true">
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="CODE" expression="row6.code==0?0:1" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.3" xpath="out4.body:/ESB/CODE"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="MSG_CODE" expression="context.MSGCODE" type="id_String" xpath="out4.body:/ESB/MSG_CODE"/>
+            <children xsi:type="TalendXMLMap:OutputTreeNode" name="MESSAGE" expression="row6.message " type="id_String" incomingConnections="//@node.10/@nodeData/@connections.6" xpath="out4.body:/ESB/MESSAGE"/>
+          </children>
+        </nodes>
+      </outputTrees>
+      <outputTrees name="out5">
+        <nodes name="JOB" expression="row6.job" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.1" xpath="out5/JOB" pattern=""/>
+        <nodes name="MOMENT" expression="row6.moment" type="id_Date" incomingConnections="//@node.10/@nodeData/@connections.2" xpath="out5/MOMENT" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
+        <nodes name="FACT_NO" expression="context.V_FACT_NO" type="id_String" xpath="out5/FACT_NO" pattern=""/>
+        <nodes name="PUR_NO" expression="context.V_PUR_NO" type="id_String" xpath="out5/PUR_NO" pattern=""/>
+        <nodes name="ORIGIN" expression="row6.origin" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.0" xpath="out5/ORIGIN" pattern=""/>
+        <nodes name="CODE" expression="row6.code==0?0:1" type="id_Integer" incomingConnections="//@node.10/@nodeData/@connections.4" xpath="out5/CODE" pattern=""/>
+        <nodes name="ERRMSG" expression=" row6.message" type="id_String" incomingConnections="//@node.10/@nodeData/@connections.5" xpath="out5/ERRMSG" pattern=""/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.9" target="//@node.10/@nodeData/@outputTrees.1/@nodes.4"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.5" target="//@node.10/@nodeData/@outputTrees.1/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.0" target="//@node.10/@nodeData/@outputTrees.1/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.11" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.11" target="//@node.10/@nodeData/@outputTrees.1/@nodes.5"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.10" target="//@node.10/@nodeData/@outputTrees.1/@nodes.6"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.10/@nodeData/@inputTrees.0/@nodes.10" target="//@node.10/@nodeData/@outputTrees.0/@nodes.0/@children.0/@children.2"/>
+    </nodeData>
+  </node>
+  <node componentName="tBufferOutput" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="64" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tBufferOutput_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out4" name="tBufferOutput_1">
+      <column comment="" key="false" name="body" nullable="true" pattern="" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-64" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.LogPath +TalendDate.getDate(&quot;yyyyMMdd&quot;)+&quot;-&quot;+context.SystemName+&quot;-send.log&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\r\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;|&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="true"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="true"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out5" name="tFileOutputDelimited_1">
+      <column comment="" key="false" name="JOB" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="MOMENT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="FACT_NO" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="PUR_NO" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="ORIGIN" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CODE" nullable="true" pattern="" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" name="ERRMSG" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFilterRow" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFilterRow_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="CLOSED_LIST" name="LOGICAL_OP" value="&amp;&amp;"/>
+    <elementParameter field="TABLE" name="CONDITIONS">
+      <elementValue elementRef="INPUT_COLUMN" value="CODE"/>
+      <elementValue elementRef="FUNCTION" value=""/>
+      <elementValue elementRef="OPERATOR" value="=="/>
+      <elementValue elementRef="RVALUE" value="0"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="USE_ADVANCED" value="false"/>
+    <elementParameter field="MEMO_JAVA" name="ADVANCED_COND" value="// code sample : use input_row to define the condition.&#xA;// input_row.columnName1.equals(&quot;foo&quot;) ||!(input_row.columnName2.equals(&quot;bar&quot;))&#xA;// replace the following expression by your own filter condition &#xA;input_row.columnName1.equals(input_row.columnName2)&#xA;&#x9;&#x9;&#x9;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out5" name="tFilterRow_1">
+      <column comment="" key="false" name="JOB" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="MOMENT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="FACT_NO" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="PUR_NO" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="ORIGIN" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CODE" nullable="true" pattern="" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" name="ERRMSG" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="FILTER" label="out5" name="FILTER">
+      <column comment="" key="false" name="JOB" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="MOMENT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="FACT_NO" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="PUR_NO" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="ORIGIN" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CODE" nullable="true" pattern="" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" name="ERRMSG" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" label="out5" name="REJECT">
+      <column comment="" key="false" name="JOB" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="MOMENT" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column comment="" key="false" name="FACT_NO" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="PUR_NO" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="ORIGIN" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CODE" nullable="true" pattern="" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column comment="" key="false" name="ERRMSG" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleRollback" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="704">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleRollback_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleRollback_1"/>
+  </node>
+  <node componentName="tOracleCommit" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="832">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleCommit_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CHECK" name="CLOSE" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleCommit_1"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_4"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="&quot;Update 資料成功&quot;"/>
+    <elementParameter field="TEXT" name="CODE" value="0"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_4"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="context.MSGCODE += &quot;CHEM-200002&quot;;&#xA;context.ERRMSG += &quot;該訂購單不存在資料交換中心&quot;;&#xA;&#xA;&#xA;&#xA;System.out.println(context.ERRMSG);&#xA;System.out.println(((String)globalMap.get(&quot;tOracleInput_1_QUERY&quot;)));&#xA;System.out.println(((Integer)globalMap.get(&quot;tOracleInput_1_NB_LINE&quot;)));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3"/>
+  </node>
+  <node componentName="tFileInputXML" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="-160" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputXML_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/factory/Desktop/test.xml&quot;"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="QUERY" value="&quot;/&quot;"/>
+      <elementValue elementRef="NODECHECK" value="true"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LIMIT" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="IGNORE_NS" value="false"/>
+    <elementParameter field="CHECK" name="IGNORE_DTD" value="false"/>
+    <elementParameter field="FILE" name="TMP_FILENAME" value="&quot;C:/ETL/TOS_ESB-V5.6.2/workspace/temp.xml&quot;"/>
+    <elementParameter field="CHECK" name="USE_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="FIELD_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="GENERATION_MODE" value="Dom4j"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputXML_1">
+      <column comment="" key="false" name="body" nullable="true" pattern="" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" name="body" nullable="true" pattern="" sourceType="" type="id_Document" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-288" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_1"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="// code sample:&#xA;//&#xA;// multiply by 2 the row identifier&#xA;// output_row.id = input_row.id * 2;&#xA;//&#xA;// lowercase the name&#xA;// output_row.name = input_row.name.toLowerCase();&#xA;&#xA;&#xA;context.xmlBody = input_row.body;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_1"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="body"/>
+      <elementValue elementRef="VALUE" value="((Document)context.xmlBody)"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_2">
+      <column comment="" key="false" name="body" nullable="true" pattern="" sourceType="" type="id_Document" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="224" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_2"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="KEEP_ORDER_FOR_DOCUMENT" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out2" name="out2">
+      <column comment="" key="false" name="FACT_NO" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="PUR_NO" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="SHIP_DATE" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="SEC_NO" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendXMLMap:XmlMapData">
+      <inputTrees name="row3" matchingMode="ALL_ROWS" lookupMode="LOAD_ONCE">
+        <nodes name="body" expression="" type="id_Document" xpath="row3/body">
+          <children name="ESB" type="id_String" xpath="row3.body:/ESB" loop="true" main="true">
+            <children name="PUR_ORDERM" type="id_String" xpath="row3.body:/ESB/PUR_ORDERM">
+              <children name="FACT_NO" type="id_String" outgoingConnections="//@node.21/@nodeData/@connections.0" xpath="row3.body:/ESB/PUR_ORDERM/FACT_NO"/>
+              <children name="PUR_NO" type="id_String" outgoingConnections="//@node.21/@nodeData/@connections.1" xpath="row3.body:/ESB/PUR_ORDERM/PUR_NO"/>
+              <children name="SHIP_DATE" type="id_String" outgoingConnections="//@node.21/@nodeData/@connections.2" xpath="row3.body:/ESB/PUR_ORDERM/SHIP_DATE"/>
+              <children name="SEC_NO" type="id_String" outgoingConnections="//@node.21/@nodeData/@connections.3" xpath="row3.body:/ESB/PUR_ORDERM/SEC_NO"/>
+            </children>
+          </children>
+        </nodes>
+      </inputTrees>
+      <outputTrees name="out2">
+        <nodes name="FACT_NO" expression="[row3.body:/ESB/PUR_ORDERM/FACT_NO]" type="id_String" incomingConnections="//@node.21/@nodeData/@connections.0" xpath="out2/FACT_NO"/>
+        <nodes name="PUR_NO" expression="[row3.body:/ESB/PUR_ORDERM/PUR_NO]" type="id_String" incomingConnections="//@node.21/@nodeData/@connections.1" xpath="out2/PUR_NO"/>
+        <nodes name="SHIP_DATE" expression="[row3.body:/ESB/PUR_ORDERM/SHIP_DATE]" type="id_String" incomingConnections="//@node.21/@nodeData/@connections.2" xpath="out2/SHIP_DATE"/>
+        <nodes name="SEC_NO" expression="[row3.body:/ESB/PUR_ORDERM/SEC_NO]" type="id_String" incomingConnections="//@node.21/@nodeData/@connections.3" xpath="out2/SEC_NO"/>
+      </outputTrees>
+      <varTables name="Var" minimized="true"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.21/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.0" target="//@node.21/@nodeData/@outputTrees.0/@nodes.0"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.21/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.1" target="//@node.21/@nodeData/@outputTrees.0/@nodes.1"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.21/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.2" target="//@node.21/@nodeData/@outputTrees.0/@nodes.2"/>
+      <connections xsi:type="TalendXMLMap:Connection" source="//@node.21/@nodeData/@inputTrees.0/@nodes.0/@children.0/@children.0/@children.3" target="//@node.21/@nodeData/@outputTrees.0/@nodes.3"/>
+    </nodeData>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_3"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="&#xA;if (input_row.FACT_NO == null || input_row.FACT_NO.trim().equals(&quot;&quot;))&#xA;{&#xA;&#x9;context.IsLegal = false;&#xA;&#x9;context.MSGCODE += &quot;CHEM-000001;&quot;;&#xA;&#x9;context.ERRMSG += &quot;廠別編號不可為空!;&quot;;&#xA;}&#xA;&#xA;if(input_row.PUR_NO==null || input_row.PUR_NO.trim().equals(&quot;&quot;))&#xA;{&#xA;&#x9;context.IsLegal = false;&#xA;&#x9;context.MSGCODE += &quot;CHEM-000002;&quot;;&#xA;&#x9;context.ERRMSG += &quot;訂購單號不可為空!;&quot;;&#xA;}&#xA;if (input_row.SHIP_DATE == null || input_row.SHIP_DATE.trim().equals(&quot;&quot;) )&#xA;{&#xA;&#x9;context.IsLegal = false;&#xA;&#x9;context.MSGCODE += &quot;CHEM-000003;&quot;;&#xA;&#x9;context.ERRMSG += &quot;客戶交期不可為空 !;&quot;;&#xA;}&#xA;else if(TalendDate.isDate(input_row.SHIP_DATE,&quot;yyyyMMdd&quot;)==false &amp;&amp; input_row.SHIP_DATE !=null )&#xA;{&#xA;&#x9;context.IsLegal = false;&#xA;&#x9;context.MSGCODE += &quot;CHEM-000004;&quot;;&#xA;&#x9;context.ERRMSG += &quot;客戶交期不符合日期格式(YYYYMMDD)!;&quot;;&#xA;}&#xA;if(input_row.FACT_NO !=null &amp;&amp; input_row.FACT_NO.trim().equals(&quot;&quot;)==false)&#xA;{&#xA;&#x9;context.V_FACT_NO = input_row.FACT_NO;&#xA;&#x9;context.V_PUR_NO = input_row.PUR_NO;&#xA;&#x9;context.V_SHIP_DATE = input_row.SHIP_DATE;&#xA;&#x9;context.V_SEC_NO = input_row.SEC_NO;&#xA;}&#xA;&#xA;int li,li_c;&#xA;if (StringHandling.LEN(context.MSGCODE) > 0 )&#xA;{&#xA;&#x9;li = StringHandling.LEN(context.MSGCODE)-1;&#xA;&#x9;li_c = StringHandling.LEN(context.ERRMSG)-1;&#xA;    System.out.println(StringHandling.LEN(context.ERRMSG)-1);&#xA;&#xA;    System.out.println(StringHandling.LEFT(context.MSGCODE,li));&#xA;    &#xA;&#x9;context.MSGCODE = StringHandling.LEFT(context.MSGCODE,li);&#xA;&#x9;context.ERRMSG = StringHandling.LEFT(context.ERRMSG,li_c);&#xA;}&#xA;&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="out2" name="tJavaRow_3">
+      <column comment="" key="false" name="FACT_NO" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="PUR_NO" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="SHIP_DATE" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="SEC_NO" nullable="true" sourceType="id_String" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileInputJSON" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="32" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputJSON_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="READBYXPATH" value="true"/>
+    <elementParameter field="CHECK" name="USEURL" value="false"/>
+    <elementParameter field="TEXT" name="URLPATH" value="&quot;http://localhost:8080/JSON/JSON_file.txt&quot;"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.ConfigPath + &quot;config.json&quot;"/>
+    <elementParameter field="TEXT" name="LOOP_QUERY" value="&quot;/&quot;"/>
+    <elementParameter field="TABLE" name="MAPPING">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHEM_SYS_HOST"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHEM_SYS_PORT"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHEM_SYS_SID"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHEM_SYS_USER"/>
+      <elementValue elementRef="QUERY" value=""/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHEM_SYS_PWD"/>
+      <elementValue elementRef="QUERY" value=""/>
+    </elementParameter>
+    <elementParameter field="TABLE" name="MAPPINGXPATH">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHEM_SYS_HOST"/>
+      <elementValue elementRef="QUERY" value="&quot;DB_NO/&quot;+context.V_RECEIVE_DB+&quot;/HOST&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHEM_SYS_PORT"/>
+      <elementValue elementRef="QUERY" value="&quot;DB_NO/&quot;+context.V_RECEIVE_DB+&quot;/PORT&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHEM_SYS_SID"/>
+      <elementValue elementRef="QUERY" value="&quot;DB_NO/&quot;+context.V_RECEIVE_DB+&quot;/SID&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHEM_SYS_USER"/>
+      <elementValue elementRef="QUERY" value="&quot;DB_NO/&quot;+context.V_RECEIVE_DB+&quot;/USERNAME&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CHEM_SYS_PWD"/>
+      <elementValue elementRef="QUERY" value="&quot;DB_NO/&quot;+context.V_RECEIVE_DB+&quot;/PASSWORD&quot;"/>
+      <elementValue elementRef="NODECHECK" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CHECK_DATE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;UTF-8&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="UTF-8"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileInputJSON_1">
+      <column comment="" key="false" name="CHEM_SYS_HOST" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CHEM_SYS_PORT" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CHEM_SYS_SID" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CHEM_SYS_USER" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CHEM_SYS_PWD" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+    <metadata connector="REJECT" name="REJECT">
+      <column comment="" key="false" name="CHEM_SYS_HOST" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CHEM_SYS_PORT" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CHEM_SYS_SID" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CHEM_SYS_USER" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CHEM_SYS_PWD" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorCode" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="160" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_4"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="//context.V_CHEM_SYS_HOST = &quot;pyvchemtst.db.pyv.com.vn&quot;;&#xA;//context.V_CHEM_SYS_POST = &quot;1521&quot;;&#xA;//context.V_CHEM_SYS_SID = &quot;chemdb&quot;;&#xA;//context.V_CHEM_SYS_USER = &quot;chemdec&quot;;&#xA;//ntext.V_CHEM_SYS_PWD = &quot;vnchemdec&quot;;&#xA;if(input_row.CHEM_SYS_HOST ==null || input_row.CHEM_SYS_HOST.trim().equals(&quot;&quot;))&#xA;{&#xA;&#x9;context.IsLegal = false;&#xA;&#x9;context.MSGCODE += &quot;CHEM-100008&quot;;&#xA;&#x9;context.ERRMSG += &quot;接收方DB代碼不正確&quot;;&#xA;}&#xA;else if (input_row.CHEM_SYS_HOST !=null || input_row.CHEM_SYS_HOST.trim().equals(&quot;&quot;) == false)&#xA;{&#xA;&#x9;context.V_CHEM_SYS_HOST = input_row.CHEM_SYS_HOST;&#xA;&#x9;context.V_CHEM_SYS_POST = input_row.CHEM_SYS_PORT;&#xA;&#x9;context.V_CHEM_SYS_SID = input_row.CHEM_SYS_SID;&#xA;&#x9;context.V_CHEM_SYS_USER = input_row.CHEM_SYS_USER;&#xA;&#x9;context.V_CHEM_SYS_PWD = crypto.decryptString(input_row.CHEM_SYS_PWD);&#xA;}&#xA;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJavaRow_4">
+      <column comment="" key="false" name="CHEM_SYS_HOST" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CHEM_SYS_PORT" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CHEM_SYS_SID" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CHEM_SYS_USER" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" name="CHEM_SYS_PWD" nullable="true" pattern="" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tOracleInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="544" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_1"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tOracleConnection_1"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECTION_TYPE" value="ORACLE_SID"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_11-6"/>
+    <elementParameter field="TEXT" name="RAC_URL" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="Oracle"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1521&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="0RMsyjmybrE="/>
+    <elementParameter field="TEXT" name="JDBC_URL" value="&quot;jdbc:oracle:oci:/@talend&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;SELECT *&#xD;&#xA;FROM PUR_EXCHANGEM&#xD;&#xA;WHERE FACT_NO = '&quot;+context.V_FACT_NO +&quot;'&#xD;&#xA;&#x9;AND PUR_NO = '&quot;+context.V_PUR_NO +&quot;'&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="oracle_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="*Note: Example for Additional JDBC Parameters: &quot;parameterName1=value1&amp;&amp;parameterName2=value2&quot;"/>
+    <elementParameter field="CHECK" name="IS_CONVERT_XMLTYPE" value="false"/>
+    <elementParameter field="TABLE" name="CONVERT_XMLTYPE"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_CURSOR" value="false"/>
+    <elementParameter field="TEXT" name="CURSOR_SIZE" value="1000"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN"/>
+    <elementParameter field="CHECK" name="NO_NULL_VALUES" value="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tOracleInput_1"/>
+  </node>
+  <node componentName="tWarn" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="576">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_3"/>
+    <elementParameter field="DIRECTORY" name="JAVA_LIBRARY_PATH" value="D:\TOS_ESB-20150508_1414-V5.6.2\Studio\configuration\lib\java"/>
+    <elementParameter field="TEXT" name="MESSAGE" value="context.ERRMSG"/>
+    <elementParameter field="TEXT" name="CODE" value="1"/>
+    <elementParameter field="CLOSED_LIST" name="PRIORITY" value="4"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tWarn_3"/>
+  </node>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tXMLMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_1" target="tJavaRow_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="COUNTRY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SENDER_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SENDER_DB"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RECEIVE_ID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="RECEIVE_DB"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VOU_CODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_2" offsetLabelX="0" offsetLabelY="0" source="tJavaRow_2" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_1" target="tWarn_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.IsLegal == false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If1"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_1" target="tFixedFlowInput_2">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.IsLegal == true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If2"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tOracleConnection_1" offsetLabelX="0" offsetLabelY="0" source="tOracleConnection_1" target="tOracleInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="0" metaname="tFixedFlowInput_3" offsetLabelX="-8" offsetLabelY="0" source="tFixedFlowInput_3" target="tXMLMap_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tFixedFlowInput_3" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_3" target="tWarn_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="out3" lineStyle="0" metaname="out3" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_3" target="tOracleOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="FACT_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PUR_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SHAP_DAY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SEC_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out3"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tXMLMap_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="moment"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="father_pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="project"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="job"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="context"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="priority"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="message"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="code"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6"/>
+  </connection>
+  <connection connectorName="FLOW" label="out4" lineStyle="0" metaname="out4" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tXMLMap_4" target="tBufferOutput_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out4"/>
+  </connection>
+  <connection connectorName="FLOW" label="out5" lineStyle="0" metaname="out5" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tXMLMap_4" target="tFileOutputDelimited_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="job"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MOMENT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FACT_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PUR_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORIGIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ERRMSG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out5"/>
+  </connection>
+  <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tFilterRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="job"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MOMENT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="FACT_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PUR_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ORIGIN"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CODE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ERRMSG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row7"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFilterRow_1" offsetLabelX="-2" offsetLabelY="1" outputId="1" source="tFilterRow_1" target="tOracleRollback_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFilterRow_1_NB_LINE_OK&quot;))==0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If8"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tFilterRow_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tFilterRow_1" target="tOracleCommit_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tFilterRow_1_NB_LINE_OK&quot;))>0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If9"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tWarn_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileInputXML_1" offsetLabelX="1" offsetLabelY="4" source="tFileInputXML_1" target="tJavaRow_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJavaRow_1" offsetLabelX="-1" offsetLabelY="-17" source="tJavaRow_1" target="tFixedFlowInput_1">
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFixedFlowInput_2" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_2" target="tXMLMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tXMLMap_2" target="tJavaRow_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="FACT_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="PUR_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SHIP_DATE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SEC_NO"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaRow_3" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJavaRow_3" target="tWarn_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.IsLegal == false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If3"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaRow_3" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJavaRow_3" target="tFileInputJSON_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.IsLegal != false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If4"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFileInputJSON_1" offsetLabelX="25" offsetLabelY="5" source="tFileInputJSON_1" target="tJavaRow_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER">
+      <elementValue elementRef="TRACE_COLUMN" value="CHEM_SYS_HOST"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHEM_SYS_PORT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHEM_SYS_SID"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHEM_SYS_USER"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CHEM_SYS_PWD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaRow_4" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJavaRow_4" target="tWarn_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.IsLegal == false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If11"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tJavaRow_4" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJavaRow_4" target="tOracleConnection_1">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="context.IsLegal != false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If13"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tOracleInput_1" target="tJava_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tOracleInput_1_NB_LINE&quot;))==0"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If7"/>
+  </connection>
+  <connection connectorName="RUN_IF" label="If" lineStyle="6" metaname="tOracleInput_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tOracleInput_1" target="tFixedFlowInput_3">
+    <elementParameter field="MEMO_JAVA" name="CONDITION" value="((Integer)globalMap.get(&quot;tOracleInput_1_NB_LINE&quot;))>0&#xA;"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="If12"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_1"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Check data (V_RECEIVE_DB)"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleConnection_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_3"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="update to table pur_exchangem"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tLogCatcher_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleRollback_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleCommit_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputXML_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFixedFlowInput_2"/>
+    <elementParameter field="TEXT" name="SUBJOB_TITLE" value="Check data (fact_no,pur_no,ship_date)"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileInputJSON_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tOracleInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tWarn_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+</talendfile:ProcessType>
